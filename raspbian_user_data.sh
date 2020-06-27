@@ -1,9 +1,16 @@
 #!/bin/sh
 
-mkdir ~/.config/nvim/.vim/plugged -p
-curl https://raw.githubusercontent.com/pr1metine/dotfiles/master/.p10k.zsh >> ~/.p10k.zsh
-curl https://raw.githubusercontent.com/pr1metine/dotfiles/master/.zshrc >> ~/.zshrc
-curl https://raw.githubusercontent.com/pr1metine/dotfiles/master/.config/nvim/init.vim >> ~/.config/nvim/init.vim
+mkdir ~/.config/nvim/.vim/undodir -p
+curl -fLo $HOME/.p10k.zsh --create-dirs \
+       https://raw.githubusercontent.com/pr1metine/dotfiles/master/.p10k.zsh 
+curl -fLo $HOME/.zshrc --create-dirs \
+       https://raw.githubusercontent.com/pr1metine/dotfiles/master/.zshrc
+curl -fLo $HOME/.gitignore --create-dirs \
+       https://raw.githubusercontent.com/pr1metine/dotfiles/master/.gitignore
+curl -fLo ${XDG_DATA_HOME:-$HOME/.local/share}/nvim/init.vim --create-dirs \
+       https://raw.githubusercontent.com/pr1metine/dotfiles/master/.config/nvim/init.vim
+
+echo "\nSuccessfully fetched config data\n"
 
 echo "sudo apt update -qq && sudo apt upgrade -y -qq"
 
