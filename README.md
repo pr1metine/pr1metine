@@ -6,8 +6,9 @@ This repo contains all my runtime configurations ("dotfiles") e. g. .zshrc,
 (32-bit).
 
 ---
-Raspberry Pi OS: :check:
-Windows: :cross:
+Raspberry Pi OS: ✅
+Windows: ❌
+Any Linux Distro other than Debian: ❌, not confirmed
 --
 
 ## Installation
