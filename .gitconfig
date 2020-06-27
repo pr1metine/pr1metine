@@ -1,0 +1,8 @@
+[user]
+	name = Thanh
+	email = quang.thanh.ta@pr1meti.de
+	signingkey = 0x5D361E50C6E01AFD
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/bin/gpg
