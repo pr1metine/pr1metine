@@ -18,7 +18,6 @@ set relativenumber
 set scrolloff=8
 set shiftwidth=4
 set shortmess+=c
-set shortmess+=c
 set smartcase
 set smartindent
 set tabstop=4 softtabstop=4
@@ -61,8 +60,7 @@ let g:airline_powerline_fonts=1
 
 let mapleader=','
 
-autocmd FileType java compiler gradle
-autocmd FileType groovy compiler gradle
+compiler gradle
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
