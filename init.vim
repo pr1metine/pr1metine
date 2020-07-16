@@ -58,13 +58,11 @@ call plug#end()
 colorscheme molokai
 let g:airline_powerline_fonts=1
 
-let mapleader=','
+let g:mapleader=','
 
 compiler gradle
-nnoremap <leader>xr :Make run<CR>
-nnoremap <leader>xx :Make
-autocmd FileType java compiler gradle
-autocmd FileType groovy compiler gradle
+nmap <leader>xr :make run<CR>
+nmap <leader>xx :make
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
@@ -88,7 +86,7 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
- 
+
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current
 " position. Coc only does snippet and additional edit on confirm.
 " <cr> could be remapped by other vim plugin, try `:verbose imap <CR>`.
@@ -113,12 +111,11 @@ nmap <silent> <C-s> <Plug>(coc-range-select)
 nmap <silent> <leader>gn <Plug>(coc-diagnostic-next-error)
 nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev-error)
 nnoremap <leader>cr :CocRestart
+nnoremap <silent> K :call <SID>show_documentation()<CR>
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 xmap <leader>f  <Plug>(coc-format-selected)
 xmap <silent> <C-s> <Plug>(coc-range-select)
 
-" Use K to show documentation in preview window.
-nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -130,16 +127,6 @@ endfunction
 
 " Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
-
-
-augroup mygroup
-  autocmd!
-  " Setup formatexpr specified filetype(s).
-  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
-  " Update signature help on jump placeholder.
-  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
-augroup end
-
 
 " Add `:Format` command to format current buffer.
 command! -nargs=0 Format :call CocAction('format')
