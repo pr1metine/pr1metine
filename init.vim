@@ -61,6 +61,10 @@ let g:airline_powerline_fonts=1
 let mapleader=','
 
 compiler gradle
+nnoremap <leader>xr :Make run<CR>
+nnoremap <leader>xx :Make
+autocmd FileType java compiler gradle
+autocmd FileType groovy compiler gradle
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
