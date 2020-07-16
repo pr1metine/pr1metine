@@ -61,8 +61,8 @@ let g:airline_powerline_fonts=1
 let g:mapleader=','
 
 compiler gradle
-nmap <leader>xr :make run<CR>
-nmap <leader>xx :make
+nmap <leader>xr :Make run<CR>
+nmap <leader>xx :Make
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
