@@ -1,20 +1,17 @@
-# dotfiles
-~/.* and various other runtime configuration files
+![pr1metine-banner.png](/images/pr1metine-banner.png)
+<h1 align="center">
+    Quang Thanh Ta aka "pr1metine"
+<h1>
+<p align="center">
+    <a href="https://github.com/pr1metine">
+        <img alt="GitHub followers"
+        src="https://img.shields.io/github/followers/pr1metine?style=social"
+        >
+    </a>
+</p>
 
-This repo contains all my runtime configurations ("dotfiles") e. g. .zshrc, 
-.p10k.zsh, etc. For now, most of these files are meant to be used on Raspberry Pi OS
-(32-bit).
+Hi all,
 
-Raspberry Pi OS | Windows | Any Linux distro other than Debian
---- | --- | ---
-✅ | ❌ | ❌, not confirmed
-
-## Installation
-To apply the configuration settings specified in this repository, follow the 
-instructions for your OS:
-
-- Raspberry Pi OS:
-	- Execute this command on the command line
-		```sh
-		./raspbian_user_data.sh
-		```
+my name is Thanh and I'm a German high school senior currently. I'm most familiar
+with Java having learned it since the age of 12 with some experience in ![ flutter ]
+(https://github.com/flutter/flutter) and web development.
