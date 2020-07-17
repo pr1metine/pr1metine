@@ -13,5 +13,5 @@
 Hi all,
 
 my name is Thanh and I'm a German high school senior currently. I'm most familiar
-with Java having learned it since the age of 12 with some experience in ![ flutter ]
-(https://github.com/flutter/flutter) and web development.
+with Java having learned it since the age of 12 with some experience in 
+[flutter](https://github.com/flutter/flutter) and web development.
