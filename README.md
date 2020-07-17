@@ -1,7 +1,7 @@
 ![pr1metine-banner.png](/images/pr1metine-banner.png)
 <h1 align="center">
     Quang Thanh Ta aka "pr1metine"
-<h1>
+</h1>
 <p align="center">
     <a href="https://github.com/pr1metine">
         <img alt="GitHub followers"
