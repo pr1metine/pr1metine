@@ -1,4 +1,4 @@
-![pr1metine-banner.png](/images/pr1metine-banner.png)
+![pr1metine-banner.png](https://github.com/pr1metine/pr1metine/raw/master/images/pr1metine-banner.png)
 <h1 align="center">
     Quang Thanh Ta aka "pr1metine"
 </h1>
