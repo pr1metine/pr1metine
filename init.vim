@@ -51,14 +51,13 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
 
-Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
-
 call plug#end()
 
 colorscheme molokai
-let g:airline_powerline_fonts=1
 
 let g:mapleader=','
+let g:coc_snippet_next = '<C-j>'
+let g:coc_snippet_prev = '<C-k>'
 
 compiler gradle
 nmap <leader>xr :Make run<CR>
@@ -97,8 +96,8 @@ else
 endif
 
 nmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>ac  <Plug>(coc-codeaction)
-nmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>aa  <Plug>(coc-codeaction)
+nmap <leader>ff  <Plug>(coc-format)
 nmap <leader>g[ <Plug>(coc-diagnostic-prev)
 nmap <leader>g] <Plug>(coc-diagnostic-next)
 nmap <leader>gd <Plug>(coc-definition)
@@ -127,6 +126,3 @@ endfunction
 
 " Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
-
-" Add `:Format` command to format current buffer.
-command! -nargs=0 Format :call CocAction('format')
