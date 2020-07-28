@@ -1,5 +1,6 @@
 syntax on
 
+set clipboard=unnamedplus
 set cmdheight=2
 set expandtab
 set guicursor=
@@ -58,6 +59,8 @@ colorscheme molokai
 let g:mapleader=','
 let g:coc_snippet_next = '<C-j>'
 let g:coc_snippet_prev = '<C-k>'
+let g:fzf_layout = {'window': {'width': 0.8, 'height': 0.8 }}
+let $FZF_DEFAULT_OPTS = '--reverse'
 
 compiler gradle
 nmap <leader>xr :Make run<CR>
