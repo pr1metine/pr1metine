@@ -1,0 +1,32 @@
+syntax on
+set relativenumber
+set number
+set scrolloff=10
+
+let mapleader = " "
+
+set easymotion
+set surround
+set commentary
+
+"*R*un
+:map <leader>rd <Action>(Debug)
+:map <leader>rr <Action>(Run)
+:map <leader>rc <Action>(editRunConfigurations)
+
+"*F*ormatting
+:map <leader>ff <Action>(ReformatCode)
+
+"Code *A*ction
+:map <leader>aa <Action>(Refactorings.QuickListPopupAction)
+:map <leader>ar <Action>(RenameElement)
+
+"Tool *W*indow
+:map <leader>wt <Action>(ActivateTerminalToolWindow)
+:map <leader>wg <Action>(ActivateGradleToolWindow)
+:map <leader>wp <Action>(ActivateProjectToolWindow)
+
+"*V*iew
+:map <leader>vd <Action>(ToggleRenderedDocPresentation)
+:map <leader>vz <Action>(ToggleDistractionFreeMode)
+:map <leader>vp <Action>(TogglePresentationMode)

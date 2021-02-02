@@ -45,6 +45,7 @@ Plug 'tomasr/molokai'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-dispatch'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -59,9 +60,9 @@ let g:mapleader=' '
 let g:coc_snippet_next = '<C-j>'
 let g:coc_snippet_prev = '<C-k>'
 
-compiler gradle
-nmap <leader>xr :Make run<CR>
-nmap <leader>xx :Make
+" compiler gradle
+" nmap <leader>xr :Make run<CR>
+" nmap <leader>xx :Make
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
