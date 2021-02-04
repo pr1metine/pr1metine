@@ -5,28 +5,41 @@ set scrolloff=10
 
 let mapleader = " "
 
+set multiple-cursors
 set easymotion
 set surround
 set commentary
 
+" greatest remap ever
+" next greatest remap ever : asbjornHaland x ThePrimeagen
+nnoremap <leader>Y gg"+yG
+nnoremap <leader>y "+y
+vnoremap <leader>p "_dP
+vnoremap <leader>y "+y
+
 "*R*un
-:map <leader>rd <Action>(Debug)
-:map <leader>rr <Action>(Run)
+:map <leader>rb <Action>(Build)
 :map <leader>rc <Action>(editRunConfigurations)
+:map <leader>rr <Action>(Run)
 
-"*F*ormatting
-:map <leader>ff <Action>(ReformatCode)
+"*D*ebug
+:map <leader>db <Action>(ToggleLineBreakpoint)
+:map <leader>dd <Action>(Debug)
+:map <leader>dsi <Action>(StepInto)
+:map <leader>dso <Action>(StepOver)
 
-"Code *A*ction
+"code *a*ction
 :map <leader>aa <Action>(Refactorings.QuickListPopupAction)
+:map <leader>af <Action>(ReformatCode)
 :map <leader>ar <Action>(RenameElement)
 
 "Tool *W*indow
-:map <leader>wt <Action>(ActivateTerminalToolWindow)
+:map <leader>wd <Action>(ActivateDebugToolWindow)
 :map <leader>wg <Action>(ActivateGradleToolWindow)
 :map <leader>wp <Action>(ActivateProjectToolWindow)
+:map <leader>wt <Action>(ActivateTerminalToolWindow)
 
 "*V*iew
 :map <leader>vd <Action>(ToggleRenderedDocPresentation)
-:map <leader>vz <Action>(ToggleDistractionFreeMode)
 :map <leader>vp <Action>(TogglePresentationMode)
+:map <leader>vz <Action>(ToggleDistrActionFreeMode)
