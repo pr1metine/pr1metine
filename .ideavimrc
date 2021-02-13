@@ -6,7 +6,6 @@ set scrolloff=10
 let mapleader = " "
 
 set multiple-cursors
-set easymotion
 set surround
 set commentary
 
@@ -27,8 +26,10 @@ vnoremap <leader>y "+y
 :map <leader>dd <Action>(Debug)
 :map <leader>dsi <Action>(StepInto)
 :map <leader>dso <Action>(StepOver)
+:map <leader>deq <Action>(QuickEvaluateExpression)
+:map <leader>dee <Action>(EvaluateExpression)
 
-"code *a*ction
+"Code *a*ction
 :map <leader>aa <Action>(Refactorings.QuickListPopupAction)
 :map <leader>af <Action>(ReformatCode)
 :map <leader>ar <Action>(RenameElement)
