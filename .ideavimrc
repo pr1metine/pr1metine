@@ -2,6 +2,7 @@ syntax on
 set relativenumber
 set number
 set scrolloff=10
+set ideajoin
 
 let mapleader = " "
 
@@ -27,7 +28,6 @@ vnoremap <leader>y "+y
 :map <leader>dsi <Action>(StepInto)
 :map <leader>dso <Action>(StepOver)
 :map <leader>deq <Action>(QuickEvaluateExpression)
-:map <leader>dee <Action>(EvaluateExpression)
 
 "Code *a*ction
 :map <leader>aa <Action>(Refactorings.QuickListPopupAction)
@@ -36,7 +36,7 @@ vnoremap <leader>y "+y
 
 "Tool *W*indow
 :map <leader>wd <Action>(ActivateDebugToolWindow)
-:map <leader>wg <Action>(ActivateGradleToolWindow)
+:map <leader>wg <Action>(ActivateCommitToolWindow)
 :map <leader>wp <Action>(ActivateProjectToolWindow)
 :map <leader>wt <Action>(ActivateTerminalToolWindow)
 
